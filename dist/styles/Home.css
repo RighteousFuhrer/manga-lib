@@ -1,0 +1,123 @@
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 7rem;
+  box-sizing: border-box;
+  width: 85%;
+  margin: 0 auto;
+}
+.page-content .search-section {
+  position: relative;
+  box-sizing: border-box;
+}
+.page-content .search-section .sort {
+  padding: 0.5rem 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+.page-content .search-section .sort .tags {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex: 1;
+  max-width: 1080px;
+}
+.page-content .search-section .sort .tags__icon {
+  color: rgb(173, 192, 210);
+  margin-right: 1rem;
+}
+.page-content .search-section .sort .tags__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.page-content .search-section .sort .tags__container .tag,
+.page-content .search-section .sort .tags__container .tag-remover {
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(61, 180, 242);
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.page-content .search-section .sort .tags__container .tag-icon,
+.page-content .search-section .sort .tags__container .tag-remover-icon {
+  margin-left: 0.5rem;
+  display: none;
+}
+.page-content .search-section .sort .tags__container .tag:hover .tag-icon,
+.page-content .search-section .sort .tags__container .tag-remover:hover .tag-icon {
+  display: inline;
+}
+.page-content .search-section .sort .tags__container .tag span,
+.page-content .search-section .sort .tags__container .tag-remover span {
+  color: rgb(201, 232, 255);
+}
+.page-content .search-section .sort .tags__container .tag-remover {
+  opacity: 0;
+  background-color: rgb(173, 192, 210);
+}
+.page-content .search-section .sort .tags__container .tag-remover span {
+  color: rgb(237, 241, 245);
+  display: inline;
+}
+.page-content .search-section .sort .tags:hover .tag-remover {
+  opacity: 1;
+}
+.page-content .search-section .sort .sort-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease-in-out;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(139, 160, 178);
+  cursor: pointer;
+}
+.page-content .search-section .sort .sort-button:hover {
+  color: rgb(116, 136, 153);
+}
+.page-content .search-section .sort .sort-button svg {
+  margin-right: 0.5rem;
+}
+.page-content .search-section .sort .sort-button .sort-dropdown {
+  display: block;
+  position: absolute;
+  top: 2.2rem;
+  box-shadow: 0 0 0.4rem rgb(212, 212, 212);
+  z-index: 2;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  width: 120px;
+  transform: translateX(-25%);
+}
+.page-content .search-section .sort .sort-button .sort-dropdown::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  box-shadow: inset 0 0 0.4rem rgb(212, 212, 212);
+}
+.page-content .search-section .sort .sort-button .sort-dropdown .dropdown-item {
+  color: rgb(116, 136, 153);
+  padding: 0.5rem 0;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+.page-content .search-section .sort .sort-button .sort-dropdown .dropdown-item:hover {
+  color: rgb(61, 180, 242);
+}

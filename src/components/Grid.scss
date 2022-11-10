@@ -1,0 +1,40 @@
+@import "./responsive";
+
+.grid-wrapper {
+    padding: 1rem;
+    width: fit-content;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow:dense;
+    grid-gap: 0.6rem;
+}
+
+
+@include media-xs{
+    .grid-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 0.75rem;
+    }
+}
+@include media-sm{
+    .grid-wrapper {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@include media-md{
+    .grid-wrapper {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@include media-lg{
+    .grid-wrapper {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+}
+
+@include media-xl{
+    .grid-wrapper {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+}
